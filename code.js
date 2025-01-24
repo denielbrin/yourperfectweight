@@ -6,13 +6,16 @@ const inputWeight = document.querySelector('.input_weight')
 const inputHeight = document.querySelector('.input_height')
 const inputAge = document.querySelector('.input_age')
 
-
-
-
+console.log(mainBro.innerHTML)
 
 resultButton.addEventListener('click', calcResult)
 
 function calcResult() {
+
+
+  if (
+    inputWeight.value !== '' && inputHeight.value !== '' && inputAge.value !== '' && mainBro.innerHTML === ''
+  ) {
   const contentTemplate = templateBro.content.cloneNode(true)
 
   const imtResult = contentTemplate.querySelector('.imt_result')
@@ -26,6 +29,13 @@ function calcResult() {
  
 
   mainBro.append(contentTemplate)
+  } else {
+    alert('укажите корректные данные')
+  }
+
+  inputWeight.value = ''
+  inputHeight.value = ''
+  inputAge.value = ''
 }
 
 
