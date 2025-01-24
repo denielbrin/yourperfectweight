@@ -24,7 +24,7 @@ function calcResult() {
 
   imtResult.textContent = Math.round(inputWeight.value / ((inputHeight.value / 100) ** 2))
   idealWeight.textContent = ((inputHeight.value - 110) * 1.15).toFixed(1)
-  deltaWeight.textContent = inputWeight.value - idealWeight.textContent
+  deltaWeight.textContent = (inputWeight.value - idealWeight.textContent).toFixed(1)
 
  
 
