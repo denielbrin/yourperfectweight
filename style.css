@@ -155,5 +155,28 @@ main {
   font-weight: 400;
 }
 
+.untitle_weight_700 {
+  font-weight: 700;
+}
+
+.untitle_weight_400 {
+  font-weight: 400;
+}
+
+.weight_700_red {
+  font-weight: 700;
+  color: red;
+  text-decoration: underline;
+}
+
+.weight_700_green {
+  font-weight: 700;
+  color: green;
+  text-decoration: underline;
+}
+
+.underline_text {
+  text-decoration: underline;
+}
 
 
